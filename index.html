@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" href="./src/img/BMW.svg" />
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!--reset-->
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <!--style-->
+    <link rel="stylesheet" href="./src/css/modal.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <!--modal.css-->
+
+    <title>BMW</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Design</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Features</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Club</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Reviews</a>
+          </li>
+        </ul>
+        <button class="header__button" data-modal-open>Order now</button>
+        <div class="backdrob is-hidden" data-modal>
+          <div class="containerr">
+            <button class="no" data-modal-close>+</button>
+            <form class="form" action="#">
+              <h2 class="form__titel">login form</h2>
+              <div class="form__containerr">
+                <label for="name">username</label>
+                <div class="flex">
+                  <input type="name" placeholder="enter username" />
+                </div>
+              </div>
+              <div class="form__containerr">
+                <label for="password">password</label>
+                <div class="flex">
+                  <input type="password" placeholder="enter password" />
+                </div>
+              </div>
+              <button class="form__button">
+                <span class="span">log-in</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__titel">BMW M8 2018</h1>
+        </div>
+      </section>
+      <section class="adventegis">
+        <div class="container adventegis__container">
+          <button class="adventegis__button">
+            Learn more<svg class="icon">
+              <use href="./src/img/symbol-defs.svg#icon-scrool_right"></use>
+            </svg>
+          </button>
+          <ul class="adventegis__list">
+            <li class="adventegis__item">
+              <span>Max speed</span><span>250 km/h</span>
+            </li>
+            <li class="adventegis__item">
+              <span>Engine</span><span>4.4L</span>
+            </li>
+            <li class="adventegis__item">
+              <span>Power</span><span>600+ BHP</span>
+            </li>
+            <li class="adventegis__item">
+              <span>Mass</span><span>1960 Kg</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/modal.js"></script>
+  </body>
+</html>

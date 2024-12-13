@@ -1,0 +1,150 @@
+:root {
+  --backround-color: #060606;
+  --button-color: #001c31;
+  --button-backround-color: #013861;
+  --text-color: #ffffff;
+}
+/* ==============Style============= */
+.container {
+  max-width: 1090px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+body {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--text-color);
+  background-color: var(--backround-color);
+  background-image: url(../img/bmw-logo.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  /* background-size: 50%; */
+  height: 100vh;
+}
+/* ============header============== */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  /* backdrop-filter: blur(10px); */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* border: 2px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10px; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+  backdrop-filter: blur(10px);
+}
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+.header__link {
+  position: relative;
+  &:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--button-backround-color);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 2px;
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--button-backround-color);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 2px;
+  }
+}
+.header__button {
+  padding: 10px 20px;
+  background-color: var(--button-backround-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  -webkit-box-shadow: 0px 0px 24px 12px rgba(1, 56, 97, 0.89);
+  -moz-box-shadow: 0px 0px 24px 12px rgba(1, 56, 97, 0.89);
+  box-shadow: 0px 0px 24px 12px rgba(1, 56, 97, 0.89);
+  &:hover {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px 20px;
+    box-shadow: none;
+    border: 1px solid var(--button-backround-color);
+  }
+}
+/* ===========hero============= */
+.hero {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-image: url(../img/bmw-car.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.hero__titel {
+  font-weight: 700;
+  font-size: 75px;
+  max-width: 300px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+/* ===========adventegis================ */
+.adventegis {
+  padding-bottom: 16px;
+}
+.adventegis__button {
+  font-size: 12px;
+  padding: 8px 12px;
+  color: var(--text-color);
+  background-color: var(--button-backround-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.adventegis__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adventegis__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.adventegis__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  text-shadow: 0px 0px 11px rgba(1, 56, 97, 1);
+}
+.icon {
+  width: 17px;
+  height: 10px;
+  fill: var(--text-color);
+}
+span {
+  text-shadow: 0px 0px 11px rgba(1, 56, 97, 1);
+}
+@media (max-width: 768px) {
+  .header__list {
+    gap: 50px;
+  }
+}
